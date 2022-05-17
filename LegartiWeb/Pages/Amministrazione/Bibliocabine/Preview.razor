@@ -1,0 +1,20 @@
+﻿@layout MainLayoutAdmin
+@page "/amministrazione/bibliocabine/preview"
+@inherits PreviewBase
+@using LegArtiModel
+
+
+<div class="body-content-legarti">
+    <div class="box-container-evento">
+        <MudCard Class="box-evento">
+            <MudItem xs="12" sm="12" md="12">
+                <MudCardContent>
+                    <img src="@imgSrc" class="img" />
+                    <MudText Typo="Typo.h5">@cabina.NomeCabina</MudText>
+                    <MudText Typo="Typo.body2" Class="text-descrizione-evento">@cabina.Posizione</MudText>
+                </MudCardContent>
+            </MudItem>
+        </MudCard>
+    </div>
+
+</div>

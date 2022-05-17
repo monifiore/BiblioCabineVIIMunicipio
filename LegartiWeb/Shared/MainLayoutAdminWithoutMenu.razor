@@ -1,0 +1,33 @@
+﻿@inherits MainLayoutAdminWithoutMenuBase
+@using MudBlazor
+
+<MudThemeProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<CascadingValue Value="this">
+    @ChildContentMainAdminWM
+
+    <div id="top-menu">
+        <div class="hamburger-logo">
+            <div class="logo">
+                <img src="/image/logo.svg" style="width: 15em;" />
+                <div class="didascalia">Legami Artistici nell'Appio Tuscolano</div>
+            </div>
+        </div>
+    </div>
+    <div id="body-admin">
+        <div class="internal-body">
+            @Body
+        </div>
+    </div>
+</CascadingValue>
+
+@code{
+    bool open = false;
+
+    void ToggleDrawer()
+    {
+        open = !open;
+    }
+}

@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegartiWeb", "LegartiWeb\LegartiWeb.csproj", "{140AED5C-7808-4852-894C-13435D328D61}"
+	ProjectSection(ProjectDependencies) = postProject
+		{69DAD4EB-AA39-4EB9-85F5-BB38E1ED40FA} = {69DAD4EB-AA39-4EB9-85F5-BB38E1ED40FA}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegArtiDAL", "LegArtiDAL\LegArtiDAL.csproj", "{E9A0E39D-C062-47F3-9DCC-C84675DE183D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegArtiCore", "LegArtiCore\LegArtiCore.csproj", "{69DAD4EB-AA39-4EB9-85F5-BB38E1ED40FA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{42018166-FAC7-43ED-B1AF-8BBFFFAE9328} = {42018166-FAC7-43ED-B1AF-8BBFFFAE9328}
+		{E9A0E39D-C062-47F3-9DCC-C84675DE183D} = {E9A0E39D-C062-47F3-9DCC-C84675DE183D}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegArtiModel", "LegArtiModel\LegArtiModel.csproj", "{42018166-FAC7-43ED-B1AF-8BBFFFAE9328}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegArtiCommon", "LegArtiCommon\LegArtiCommon.csproj", "{1D03A0BF-7487-4BD9-B331-BB7C223715AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EXT__LegartiQCode", "EXT__Legarti\EXT__LegartiQCode.csproj", "{2D40BDB9-76F7-4181-AC17-6A39C53216A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{140AED5C-7808-4852-894C-13435D328D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{140AED5C-7808-4852-894C-13435D328D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{140AED5C-7808-4852-894C-13435D328D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{140AED5C-7808-4852-894C-13435D328D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9A0E39D-C062-47F3-9DCC-C84675DE183D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A0E39D-C062-47F3-9DCC-C84675DE183D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A0E39D-C062-47F3-9DCC-C84675DE183D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A0E39D-C062-47F3-9DCC-C84675DE183D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69DAD4EB-AA39-4EB9-85F5-BB38E1ED40FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69DAD4EB-AA39-4EB9-85F5-BB38E1ED40FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69DAD4EB-AA39-4EB9-85F5-BB38E1ED40FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69DAD4EB-AA39-4EB9-85F5-BB38E1ED40FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42018166-FAC7-43ED-B1AF-8BBFFFAE9328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42018166-FAC7-43ED-B1AF-8BBFFFAE9328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42018166-FAC7-43ED-B1AF-8BBFFFAE9328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42018166-FAC7-43ED-B1AF-8BBFFFAE9328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D03A0BF-7487-4BD9-B331-BB7C223715AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D03A0BF-7487-4BD9-B331-BB7C223715AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D03A0BF-7487-4BD9-B331-BB7C223715AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D03A0BF-7487-4BD9-B331-BB7C223715AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D40BDB9-76F7-4181-AC17-6A39C53216A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D40BDB9-76F7-4181-AC17-6A39C53216A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D40BDB9-76F7-4181-AC17-6A39C53216A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D40BDB9-76F7-4181-AC17-6A39C53216A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38D146F7-0064-442D-8BC3-B26989775A4D}
+	EndGlobalSection
+EndGlobal

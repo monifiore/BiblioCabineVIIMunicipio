@@ -1,0 +1,62 @@
+﻿@layout MainLayout
+@page  "/Eventi/index"
+@inherits IndexBase
+@using LegArtiModel
+
+<div class="body-content-legarti">
+    <div class="titolo">
+        <label id="lblTitolo">Eventi</label>
+    </div>
+
+    <div id="container-eventi" class="box-container-mappa">
+        @if (listaEventi != null)
+        {
+            @if (listaEventi.Count > 0)
+            {
+                foreach (EventoModel single in listaEventi)
+                {
+                    string idLeggiMeno = "leggiMeno_" + single.IDEvento.ToString();
+                    string idLeggiTutto = "leggiTutto_" + single.IDEvento.ToString();
+                    string idBtnLeggiMeno = "leggiMenoBtn_" + single.IDEvento.ToString();
+                    string idBtnLeggiTutto = "leggiTuttoBtn_" + single.IDEvento.ToString();
+                    <div class="box-mappa results-mappa">
+                        <MudCard>
+                            <MudItem xs="12" sm="12" md="12">
+                                <MudCardContent>
+                                    <img src="@single.FileImg.PathImmagine " class="img-evento-list" />
+                                    <MudText Typo="Typo.body2" Class="data-style">@single.DataGiornoEvento  @single.OraEvento</MudText>
+                                    <MudText Typo="Typo.body2" Class="data-style">a @single.LuogoEvento</MudText>
+                                    <MudText Typo="Typo.h5">@single.TitoloEvento</MudText>
+                                    <div id="@idLeggiMeno">
+                                        <MudText Typo="Typo.body2" Class="text-descrizione-evento">@single.DescrizioneBreveEvento</MudText>
+                                    </div>
+
+                                    <div id="@idLeggiTutto" style="display:none">
+                                        <MudText Typo="Typo.body2" Class="text-descrizione-evento">@single.DescrizioneEvento</MudText>
+                                    </div>
+                                </MudCardContent>
+                            </MudItem>
+                            <MudCardActions>
+
+                                <div id="@idBtnLeggiTutto">
+                                    <MudButton @onclick="@(( )=> LeggiTutto(single.IDEvento.ToString(), true.ToString()))" Variant="Variant.Text" Color="Color.Primary">Leggi tutto</MudButton>
+                                </div>
+
+                                <div id="@idBtnLeggiMeno" style="display: none">
+                                    <MudButton @onclick="@(()=>LeggiMeno(single.IDEvento.ToString(), false.ToString()))" Variant="Variant.Text" Color="Color.Primary">Leggi meno</MudButton>
+                                </div>
+                            </MudCardActions>
+                        </MudCard>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="div-center">
+                    <MudInputLabel> Non ci sono EVENTI da mostrare</MudInputLabel>
+                </div>
+            }
+        }
+    </div>
+
+</div>

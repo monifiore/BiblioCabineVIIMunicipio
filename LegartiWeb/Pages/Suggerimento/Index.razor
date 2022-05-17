@@ -1,0 +1,62 @@
+﻿@layout MainLayout
+@page  "/suggerimento/index"
+@inherits IndexBase
+@using LegArtiModel
+
+<div class="body-content-legarti">
+
+    <div class="titolo">
+        <label id="lblTitolo">Idee & Suggerimenti</label>
+    </div>
+    <div class="content-button-aggiungi">
+        <button type="button" @onclick="@(() => SuggerimentiPersonali())" class="button-aggiungi-suggerimento">I miei suggerimenti</button>
+    </div>
+
+
+    <div class="box-container-suggerimento">
+        @if (listaSuggerimenti != null)
+        {
+            @if (listaSuggerimenti.Count > 0)
+            {
+                foreach (SuggerimentoModel single in listaSuggerimenti)
+                {
+                    <MudCard Class="box results">
+                        <MudItem xs="12" sm="12" md="12" Class="box-left-suggerimento">
+                            <MudCardContent>
+                                <MudText Typo="Typo.h5">
+                                    <MudAvatar Color="Color.Warning">
+                                        <i class="fa fa-user fa-3x" id="fa-icon-dettagliosuggerimento-grande"></i>
+                                        <i class="fa fa-user" id="fa-icon-dettagliosuggerimento-piccola" style="display:none"></i>
+                                    </MudAvatar>
+                                </MudText>
+                                <MudText Typo="Typo.body2">
+                                    @single.NomeVisualizzato <br />
+                                </MudText>
+                                <MudText Typo="Typo.body2">
+                                    @single.DataInserimento.ToString("dd/MM/yyyy")
+                                </MudText>
+
+                            </MudCardContent>
+                        </MudItem>
+                        <MudItem xs="6" sm="12" md="6" Class="box-right-suggerimento">
+                            <MudText Typo="Typo.body1">
+                                @single.Titolo
+                            </MudText>
+                            <MudText Typo="Typo.body2">
+                                @single.Testo
+                            </MudText>
+                        </MudItem>
+                    </MudCard>
+                }
+            }
+            else
+            {
+                <div class="div-center">
+                    <MudInputLabel> Non ci sono suggerimenti da mostrare</MudInputLabel>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+

@@ -1,0 +1,45 @@
+﻿@inherits MainLayoutAdminBase
+@using MudBlazor
+
+<MudThemeProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<CascadingValue Value="this">
+    @ChildContentMainAdmin
+
+    <div id="body">
+        <MudAppBar Fixed="false" id="navbar-top">
+            <MudItem xs="3" sm="3" md="6" lg="6" Class="transparent-boxes">
+                <MudPaper Class="d-flex justify-start mud-width-full transparent-boxes">
+                    <MudButton Color="Color.Transparent" ButtonType="ButtonType.Button">
+                        <a href="/"> <img src="/image/legarti_logotipo.svg" alt="legarti logo" id="legarti-logo-header" /> </a>
+                    </MudButton>
+                </MudPaper>
+            </MudItem>
+            <MudItem xs="9" sm="9" md="6" lg="6" Class="transparent-boxes menu-desktop">
+                <MudPaper Class="d-flex justify-end mud-width-full transparent-boxes">
+                    <MudButton Color="Color.Transparent" ButtonType="ButtonType.Button">
+                        <MenuTopAdmin></MenuTopAdmin>
+                    </MudButton>
+                </MudPaper>
+            </MudItem>
+        </MudAppBar>
+
+        <MudDialog ClassContent="dialog-loading" Style="margin-bottom:5em">
+            <DialogContent>
+                Dialog Content
+            </DialogContent>
+        </MudDialog>
+        @Body
+    </div>
+</CascadingValue>
+
+@code{
+    bool open = false;
+
+    void ToggleDrawer()
+    {
+        open = !open;
+    }
+}

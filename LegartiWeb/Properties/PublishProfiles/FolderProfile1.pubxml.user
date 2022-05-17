@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Monica\Progetti\Miei\Legarti\Deploy\Web</_PublishTargetUrl>
+    <History>True|2022-02-07T11:43:02.5375417Z;False|2022-02-07T12:37:24.9206288+01:00;True|2022-02-07T12:32:37.0539878+01:00;True|2022-02-07T12:27:44.1308838+01:00;True|2022-02-07T11:33:04.1683418+01:00;True|2022-02-07T11:17:00.1598290+01:00;True|2022-02-07T11:12:28.9243063+01:00;True|2022-02-07T11:10:15.6654653+01:00;True|2022-02-07T11:03:59.3602815+01:00;True|2022-02-07T11:03:43.9941841+01:00;True|2022-02-07T10:57:24.9877662+01:00;True|2022-02-07T10:48:57.9392939+01:00;True|2022-02-07T10:46:06.4129425+01:00;True|2022-02-07T10:43:09.4639339+01:00;False|2022-02-07T10:42:35.6392221+01:00;True|2022-02-07T10:39:49.2207251+01:00;</History>
+  </PropertyGroup>
+</Project>

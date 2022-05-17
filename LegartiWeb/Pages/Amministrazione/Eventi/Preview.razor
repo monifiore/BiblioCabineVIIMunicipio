@@ -1,0 +1,41 @@
+﻿@layout MainLayoutAdmin
+@page "/amministrazione/eventi/preview"
+@inherits PreviewBase
+@using LegArtiModel
+
+<div class="body-content-legarti">
+
+    <div class="box-container-evento">
+        <MudCard Class="box-evento">
+            <MudItem xs="12" sm="12" md="12">
+                <MudCardContent>
+                    <img src="@imgSrc" class="img" />
+                    <MudText Typo="Typo.body2" Class="data-style">@evento.DataGiornoEvento  @evento.OraEvento</MudText>
+                    <MudText Typo="Typo.body2" Class="data-style">a @evento.LuogoEvento</MudText>
+                    <MudText Typo="Typo.h5">@evento.TitoloEvento</MudText>
+                    @if (!isViewAll)
+                    {
+                        <MudText Typo="Typo.body2" Class="text-descrizione-evento">@evento.DescrizioneBreveEvento</MudText>
+                    }
+                    else
+                    {
+                        <MudText Typo="Typo.body2" Class="text-descrizione-evento">@evento.DescrizioneEvento</MudText>
+                    }
+                </MudCardContent>
+            </MudItem>
+            <MudCardActions>
+                @if (!isViewAll)
+                {
+                    <MudButton @onclick="@(()=>LeggiTutto())" Variant="Variant.Text" Color="Color.Primary">Leggi tutto</MudButton>
+                }
+                else
+                {
+                    <MudButton @onclick="@(()=>LeggiMeno())" Variant="Variant.Text" Color="Color.Primary">Leggi meno</MudButton>
+                }
+
+
+            </MudCardActions>
+        </MudCard>
+    </div>
+
+</div>

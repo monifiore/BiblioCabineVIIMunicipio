@@ -1,0 +1,180 @@
+﻿
+.box-container-suggerimento {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    flex-basis: calc((100% - 120px) / 3);
+    margin-left: 2em;
+    margin-bottom: 40px;
+    transition: all .1s ease-out;
+    color: #0b2d3d;
+    box-sizing: border-box;
+    width: calc((100% - 120px) / 4);
+    -ms-word-break: break-all;
+    word-break: break-all;
+    border-radius: 25px;
+}
+
+.results {
+    color: #0b2d3d;
+}
+
+.div-content-suggerimento {
+    border-radius: 25px;
+    background: #fff;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+.box-left-suggerimento {
+    padding-top: 1em;
+    float: left;
+    /* width: 30%;*/
+}
+
+.box-right-suggerimento {
+    float: right;
+    width: 70%;
+}
+
+.footer-suggerimento {
+    position: relative;
+    padding-top: 35%;
+}
+
+.box-align-left-suggerimento {
+    text-align: left;
+    // position: absolute;
+    padding-top: 35%;
+    padding-left: 20%
+}
+
+.box-align-right-suggerimento {
+    text-align: right;
+    // position: absolute;
+    padding-top: 35%;
+    padding-left: 80%
+}
+
+.box-user {
+    border-radius: 15px;
+    padding: 20px;
+}
+
+
+.box-user > .mud-avatar.mud-avatar-medium {
+    width: 80px;
+    height: 80px;
+    font-size: 1.25rem;
+}
+
+
+.content-button-aggiungi {
+    text-align: right;
+    padding: 0em 2em 2em 0em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.button-aggiungi-suggerimento {
+    width: 15em;
+    border: 2px solid #ffce33;
+    border-radius: 12em !important;
+    padding: .5em;
+}
+
+.button-delete-suggerimento {
+    height: 20px;
+    width: 49%;
+    text-align: left;
+    background-color: #fff;
+}
+
+.button-dett-suggerimento {
+    /* height: 40px;
+     width: 49%;
+    text-align: right;
+    background-color: #fff;*/
+    padding-top: 5em;
+}
+
+
+.box-right-suggerimento > .mud-card-actions {
+    flex-direction: row-reverse;
+}
+.div-center {
+    text-align: center;
+    width: 100%
+}
+
+
+.box-left-suggerimento > .mud-card-content > .mud-inherit-text > .mud-avatar.mud-avatar-medium {
+    width: 80px;
+    height: 80px;
+    font-size: 1.25rem;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .box {
+        background-color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+        flex-basis: calc((100% - 120px) / 1);
+        margin-bottom: 40px;
+        transition: all .1s ease-out;
+        color: #0b2d3d;
+        box-sizing: border-box;
+        width: calc((100% - 120px) / 1);
+        -ms-word-break: break-all;
+        word-break: break-all;
+        border-radius: 25px;
+    }
+
+    .button-aggiungi-suggerimento {
+        margin-top:5%;
+    }
+
+    .box-container-suggerimento {
+        display: flex;
+        flex-flow: wrap;
+        width: 100%;
+    }
+
+    .box-user {
+        padding: 10px 10px 10px 10px
+    }
+
+
+    .box-left-suggerimento > .mud-card-content > .mud-inherit-text > .mud-avatar.mud-avatar-medium {
+        width: 35px;
+        height: 35px;
+        font-size: .5em;
+    }
+
+    .mud-typography-body2 {
+        font-size: 10px !important;
+    }
+
+
+    #fa-icon-dettagliosuggerimento-piccola {
+        display: inline !important;
+    }
+
+    #fa-icon-dettagliosuggerimento-grande {
+        display: none !important;
+    }
+
+    .box-left-suggerimento > .mud-card-content {
+        padding: 0px;
+    }
+}

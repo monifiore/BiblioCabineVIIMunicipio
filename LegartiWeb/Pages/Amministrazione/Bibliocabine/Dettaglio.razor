@@ -1,0 +1,80 @@
+﻿@layout MainLayoutAdmin
+@page "/amministrazione/bibliocabine/dettaglio"
+@page "/amministrazione/bibliocabine/dettaglio/{IDBiblioCambina?}"
+@inherits DettaglioBase
+@using LegArtiModel
+@using System.Globalization
+
+<div class="body-content-legarti">
+
+    <MudForm Model="@cabina" @ref="form">
+        <div class="box-login">
+            <div class="centered-div">
+                <div id="box-login" class="box-login-full">
+                    <div class="input-group form-floating mb-3 col-md-12">
+                        <MudTextField @bind-Value="@cabina.NomeCabina" Label="Nome Cabina" Variant="Variant.Outlined"
+                                      Required="true" RequiredError="Campo obbligatorio" />
+                    </div>
+                    <div class="input-group form-floating mb-3 col-md-12">
+                        <MudTextField @bind-Value="@cabina.Posizione" Lines="6" Label="Posizione" Variant="Variant.Outlined"
+                                      Required="true" RequiredError="Campo obbligatorio" />
+                    </div>
+                    <div class="input-group form-floating mb-3 col-md-12">
+                        <MudTextField @bind-Value="@cabina.Link" Label="Link google Maps" Variant="Variant.Outlined"
+                                      Required="true" RequiredError="Campo obbligatorio" />
+                    </div>
+                    <div class="input-group form-floating mb-3 col-md-12">
+                        <MudSelect T="string" Label="Stato" @bind-Value="@idStato" AnchorOrigin="Origin.BottomCenter"
+                                   Required="true" RequiredError="Campo obbligatorio">
+                            <MudSelectItem T="string" Value="1.ToString()">In Bozza</MudSelectItem>
+                            <MudSelectItem T="string" Value="2.ToString()">Consolidato</MudSelectItem>
+                        </MudSelect>
+                    </div>
+
+                    <div class="input-group form-floating mb-3 col-md-12 upload-style">
+                        <MudGrid>
+                            <MudItem xs="6" sm="12" md="5" Class="upload-file">
+                                <InputFile id="fileInput" OnChange="LoadFile" hidden MaxFileSize="612000" MaxBufferSize="612000" />
+                                <MudButton HtmlTag="label"
+                                           Variant="Variant.Filled"
+                                           Color="Color.Primary"
+                                           StartIcon="@Icons.Filled.CloudUpload"
+                                           for="fileInput"
+                                           Disabled="@isDisabled">
+                                    Upload Foto
+                                </MudButton>
+                            </MudItem>
+                            <MudItem xs="6" sm="12" md="7" Class="upload-file">
+                                File selezionato:
+                                @{
+                                    if (!string.IsNullOrEmpty(cabina.FileImg.NomeFileImmagine))
+                                    {
+                                        <MudChip OnClose="CancellaFile" Text="@(cabina.FileImg.NomeFileImmagine)">@(cabina.FileImg.NomeFileImmagine)</MudChip>
+                                    }
+                                    else
+                                    {
+                                        <MudChip>@("NESSUNO") </MudChip>
+                                    }
+                                }
+                            </MudItem>
+                            <div class="evento-message-error col-md-12">
+                                @errorFileEmpty
+                            </div>
+                        </MudGrid>
+                    </div>
+
+
+                    <div class="btn-new-event">
+                        <a href="/amministrazione/bibliocabine/index">Indietro</a>
+                        <span class="primary-btns">
+                            <MudButton @onclick="@(()=>Salva())" Disabled="@(isDisabled)" Class="btn-salva-evento">Salva</MudButton>
+                            <MudButton @onclick="@(()=>Preview())" Disabled="@(isDisabled)" Class="button-preview-evento">Preview</MudButton>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </MudForm>
+
+</div>

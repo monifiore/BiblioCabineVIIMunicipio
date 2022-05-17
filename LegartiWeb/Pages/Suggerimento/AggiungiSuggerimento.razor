@@ -1,0 +1,63 @@
+﻿@layout MainLayout
+@page  "/suggerimento/aggiungiSuggerimento"
+@inherits AggiungiSuggerimentoBase
+@using LegArtiModel
+<div class="box-container">
+    @{
+
+
+    }
+</div>
+
+<div class="body-content-legarti">
+
+    @*<div class="content-button-aggiungi">
+            <MudItem xs="4" sm="12" md="6" Class="box-left-suggerimento">
+                <a href="/suggerimento/dettaglio"> <i class="fa fa-arrow-left fa-2x"></i></a>
+            </MudItem>
+        </div>*@
+
+    <div class="titolo">
+        <label id="lblTitolo">Nuovo suggerimento</label>
+    </div>
+
+    <EditForm OnValidSubmit="Salva" Model="@model" id="suggerimento-body">
+        <DataAnnotationsValidator />
+        <div class="box-login">
+            <div class="centered-div">
+                <div id="#box-login" class="box-login-full">
+                    <div class="input-group form-floating mb-8  col-md-12">
+                        <MudSelect Label="Tipologia" @bind-Value="@idTipoSuggerimento" AnchorOrigin="Origin.BottomCenter">
+                            @foreach (var dto in listaTipoSuggerimenti)
+                            {
+                                <MudSelectItem T="string" Value="@dto.ID.ToString()">@dto.Descrizione</MudSelectItem>
+                            }
+                        </MudSelect>
+                    </div>
+                    <div class="input-group form-floating mb-8  col-md-12">
+                        <MudTextField @bind-Value="@model.Titolo" Label="Titolo" Variant="Variant.Text" Adornment="Adornment.End" />
+                    </div>
+                    <div class="login-message-label col-md-12">
+                        <ValidationMessage For="@(() => model.Titolo)"></ValidationMessage>
+                    </div>
+                    <div class="input-group form-floating mb-8  col-md-12">
+                        <MudTextField T="string" @bind-Value="@model.Testo" Label="Testo" Counter="1000" Lines="5" MaxLength="1000" HelperText="Puoi inserire un testo di massimo 1000 caratteri"
+                                      Immediate="true" Variant="Variant.Text" />
+                    </div>
+                    <div class="login-message-label  col-md-12">
+                        <ValidationMessage For="@(() => model.Testo)"></ValidationMessage>
+                    </div>
+
+                    <div class="error-credential">
+                    </div>
+                    <div class="content-button-login">
+                        <button type="submit" class="button-login">Salva</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </EditForm>
+
+</div>

@@ -1,0 +1,11 @@
+﻿@inherits MenuTopAdminBase
+
+@{
+        int appo=0;
+
+}
+<nav class="top_sub-menu" data-menu-events="" data-menu-action="Level 1 open">
+    <a class=@(!string.IsNullOrEmpty(voceMenuSelezionata) && (voceMenuSelezionata.ToLower()=="amministrazione/descrizionihome/index" || voceMenuSelezionata =="" )? "top_sub-menu-link active" : "top_sub-menu-link") href="/amministrazione/home/index">Sezioni home</a>
+    <a class=@(!string.IsNullOrEmpty(voceMenuSelezionata) && voceMenuSelezionata.ToLower()=="amministrazione/eventi/index" ? "top_sub-menu-link active" : "top_sub-menu-link") href="/amministrazione/eventi/index">Eventi</a>
+    <a class=@(!string.IsNullOrEmpty(voceMenuSelezionata) && (voceMenuSelezionata.ToLower()=="suggerimento/index" ) ? "top_sub-menu-link active" : "top_sub-menu-link") href="/amministrazione/bibliocabine/index">Bibliocabine</a>
+</nav>

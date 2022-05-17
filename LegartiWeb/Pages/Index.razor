@@ -1,0 +1,89 @@
+﻿@page "/"
+@inherits IndexBase
+@using LegArtiModel
+
+
+<IndexDesktop></IndexDesktop>
+<IndexMobile></IndexMobile>
+
+@*<MudGrid Justify="Justify.FlexStart" Class="justify-content-start pa-9">
+        <MudItem xs="12" sm="12">
+            <MudPaper Class="d-flex align-center transparent-boxes">
+                <MudText Align="Align.Justify" Inline="false">La nostra Storia</MudText>
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="12">
+            <MudPaper>
+                <MudText Align="Align.Justify" Class="text-legarti dark-color" Inline="false" Style="padding:1em;">
+                    @resultStringHome
+                </MudText>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
+
+
+
+    <MudGrid Justify="Justify.FlexStart" Class="justify-content-start pa-9">
+        <MudItem xs="12" sm="12">
+            <MudPaper Class="d-flex align-center transparent-boxes">
+                <MudText Align="Align.Justify" Inline="false">Il mondo Legarti</MudText>
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="12">
+            <MudPaper>
+                <MudText Align="Align.Justify" Class="text-legarti dark-color" Inline="false" Style="padding:1em;">
+                    @resultStringMondo
+                </MudText>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
+
+    <p></p>
+    <MudGrid Justify="Justify.Center" Class="justify-content-center pa-9">
+        <MudItem xs="12" sm="12">
+            <MudCarousel Class="mud-width-full" Style="height:500px; padding-bottom:3em;" ShowBullets="@bullets" AutoCycle="@autocycle" TData="object">
+                <MudCarouselItem Transition="transition">
+                    <div style="height:100%;">
+                        <img src="/image/Cabina1.jpeg" alt="foto 1" style="height:100%; width:80%" />
+                    </div>
+                </MudCarouselItem>
+                <MudCarouselItem Transition="transition">
+                    <div style="height:100%">
+                        <img src="/image/Cabina2.jpg" alt="foto 2" style="height:100%; width:80%" />
+                    </div>
+                </MudCarouselItem>
+                <MudCarouselItem Transition="transition">
+                    <div style="height:100%">
+                        <img src="/image/Cabina3.jpg" alt="foto 3" style="height:100%; width:80%" />
+                    </div>
+                </MudCarouselItem>
+            </MudCarousel>
+        </MudItem>
+    </MudGrid>
+
+
+    <MudGrid Justify="Justify.FlexStart" Class="justify-content-start pa-9">
+        <MudItem xs="12" sm="12">
+            <MudPaper Class="d-flex align-center transparent-boxes">
+                <MudText Align="Align.Justify" Inline="false">Gli obiettivi di Legarti</MudText>
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="12">
+            <MudPaper>
+                <MudText Align="Align.Justify" Class="text-legarti dark-color" Inline="false" Style="padding:1em;">
+                    @resultStringObbiettivi
+                </MudText>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
+
+
+    @code {
+        public int spacing { get; set; } = 0;
+        public int spacingB { get; set; } = 4;
+
+        private bool bullets = true;
+        private bool autocycle = true;
+        private Transition transition = Transition.Slide;
+        private TimeSpan ts = TimeSpan.FromSeconds(1000000);
+    }*@

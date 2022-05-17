@@ -1,0 +1,62 @@
+﻿@layout MainLayout
+@page "/Registrati"
+@inherits RegistratiBase
+@inject IJSRuntime JSRuntime
+
+
+    <div class="body-content-legarti">
+        <div class="titolo">
+            <label id="lblTitolo">Registrati</label>
+        </div>
+        <EditForm OnValidSubmit="Registrati" Model="@utenteModel" id="login-body">
+            <DataAnnotationsValidator />
+            <div class="box-login">
+                <div class="centered-div">
+                    <div id="box-login" class="box-login-full">
+
+                        <div class="input-group form-floating mb-3  col-md-12">
+                            <MudTextField @bind-Value="@utenteModel.NomeVisualizzato" Label="Nome Visualizzato" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.SupervisedUserCircle" />
+                        </div>
+                        <div class="login-message-label  col-md-12">
+                            <ValidationMessage For="@(() => utenteModel.NomeVisualizzato)"></ValidationMessage>
+                        </div>
+                        <div class="input-group form-floating mb-3  col-md-12">
+                            <MudTextField @bind-Value="@utenteModel.Email" Label="Email" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Email" />
+                        </div>
+                        <div class="login-message-label col-md-12">
+                            <ValidationMessage For="@(() => utenteModel.Email)"></ValidationMessage>
+                        </div>
+                        <div class="input-group form-floating mb-3 col-md-12" id="input-password">
+                            <MudTextField @bind-Value="@utenteModel.Password" Label="Password" Variant="Variant.Outlined" InputType="@PasswordInput" Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="ViewHiddenPassword" />
+                        </div>
+                        <div class="login-message-label  col-md-12">
+                            <ValidationMessage For="@(() => utenteModel.Password)"></ValidationMessage>
+                        </div>
+                        <div class="input-group form-floating mb-3 col-md-12" id="input-password">
+                            <MudTextField @bind-Value="@utenteModel.ConfermaPass" Label="Conferma Password" Variant="Variant.Outlined" InputType="@ConfermaPassInput" Adornment="Adornment.End" AdornmentIcon="@ConfermaPassInputIcon" OnAdornmentClick="ViewHiddenConfPassword" />
+                        </div>
+                        <div class="login-message-label  col-md-12">
+                            <ValidationMessage For="@(() => utenteModel.ConfermaPass)"></ValidationMessage>
+                        </div>
+
+                        <div>
+                            @*<div id="google_recaptcha"></div>
+
+                                <button class="btn   btn-primary" @onclick="ShowResponse">Show Response</button>
+
+                                <br />
+
+                                <p>@captchaResponse</p>*@
+                        </div>
+
+                        <div class="error-credential">
+                        </div>
+                        <div class="content-button-login">
+                            <button type="submit" class="button-login">Registrati</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </EditForm>
+    </div>

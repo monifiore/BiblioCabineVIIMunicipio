@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "sFg9IU9bzfK94dvyGUgefiq7uSFyYHxim9fOMGpaH/2Kuq9KCUF8R/KfPwY82yoHqBarlIwSkOb5SKaqKW2/Jg==",
+  "success": true,
+  "projectFilePath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiCommon\\LegArtiCommon.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Monica\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.14\\microsoft.aspnetcore.authorization.5.0.14.nupkg.sha512",
+    "C:\\Users\\Monica\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.14\\microsoft.aspnetcore.components.5.0.14.nupkg.sha512",
+    "C:\\Users\\Monica\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\5.0.14\\microsoft.aspnetcore.components.analyzers.5.0.14.nupkg.sha512",
+    "C:\\Users\\Monica\\.nuget\\packages\\microsoft.aspnetcore.metadata\\5.0.14\\microsoft.aspnetcore.metadata.5.0.14.nupkg.sha512",
+    "C:\\Users\\Monica\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Monica\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Monica\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\Monica\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

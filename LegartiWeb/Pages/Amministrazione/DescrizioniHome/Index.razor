@@ -1,0 +1,102 @@
+﻿@layout MainLayoutAdmin
+@page  "/amministrazione/home/index"
+@inherits IndexBase
+@using LegArtiModel
+<div class="body-content-legarti">
+
+    <MudGrid Justify="Justify.FlexStart" Class="justify-content-start pa-9">
+        <MudItem xs="12" sm="12">
+            <div class="text-description-title">
+                <h2>La nostra Storia</h2>
+            </div>
+            <div class="text-description">
+                @if (!isModificaStoria)
+                {
+                    <MudInputLabel>@resultStringHome</MudInputLabel>
+
+
+                    <MudItem xs="12" sm="12">
+                        <div class="d-flex flex-row-reverse button-admin">
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="@(()=>ModificaTesti("STORIA"))">Modifica</MudButton>
+                        </div>
+                    </MudItem>
+                }
+                else
+                {
+                    <MudTextField Lines="20" @bind-Value="@descStoria" Variant="Variant.Outlined" Adornment="Adornment.End" />
+
+                    <MudItem xs="12" sm="12">
+                        <div class="d-flex flex-row-reverse button-admin">
+                            <MudButton Class="button-admin" Variant="Variant.Filled" Color="Color.Primary" @onclick="@(()=>Salva("STORIA"))">Salva</MudButton>
+                            <MudButton Class="button-admin" Variant="Variant.Filled" Color="Color.Primary" @onclick="@(()=>Annulla())">Annulla</MudButton>
+                        </div>
+                    </MudItem>
+                }
+            </div>
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid Justify="Justify.FlexStart" Class="justify-content-start pa-9">
+        <MudItem xs="12" sm="12">
+            <div class="text-description-title">
+                <h2>Il mondo di LegArti</h2>
+            </div>
+            <div class="text-description">
+                @if (!isModificaMondo)
+                {
+                    <MudInputLabel>@resultStringMondo</MudInputLabel>
+
+                    <MudItem xs="12" sm="12">
+                        <div class="d-flex flex-row-reverse button-admin">
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="@(()=>ModificaTesti("MONDO"))">Modifica</MudButton>
+                        </div>
+                    </MudItem>
+                }
+                else
+                {
+                    <MudTextField Lines="20" @bind-Value="@descMondo" Variant="Variant.Outlined" Adornment="Adornment.End" />
+
+                    <MudItem xs="12" sm="12">
+                        <div class="d-flex flex-row-reverse button-admin">
+                            <MudButton Class="button-admin" Variant="Variant.Filled" Color="Color.Primary" @onclick="@(()=>Salva("MONDO"))">Salva</MudButton>
+                            <MudButton Class="button-admin" Variant="Variant.Filled" Color="Color.Primary" @onclick="@(()=>Annulla())">Annulla</MudButton>
+                        </div>
+                    </MudItem>
+                }
+            </div>
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid Justify="Justify.FlexStart" Class="justify-content-start pa-9">
+        <MudItem xs="12" sm="12">
+            <div class="text-description-title">
+                <h2>I Nostri Obiettivi</h2>
+            </div>
+            <div class="text-description">
+                @if (!isModificaObiettivi)
+                {
+                    <MudInputLabel>@resultStringObbiettivi</MudInputLabel>
+
+
+                    <MudItem xs="12" sm="12">
+                        <div class="d-flex flex-row-reverse button-admin">
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="@(()=>ModificaTesti("OBBIETTIVI"))">Modifica</MudButton>
+                        </div>
+                    </MudItem>
+                }
+                else
+                {
+                    <MudTextField Lines="20" @bind-Value="@descObbiettivi" Variant="Variant.Outlined" Adornment="Adornment.End" />
+
+                    <MudItem xs="12" sm="12">
+                        <div class="d-flex flex-row-reverse button-admin">
+                            <MudButton Class="button-admin" Variant="Variant.Filled" Color="Color.Primary" @onclick="@(()=>Salva("Obbiettivi"))">Salva</MudButton>
+                            <MudButton Class="button-admin" Variant="Variant.Filled" Color="Color.Primary" @onclick="@(()=>Annulla())">Annulla</MudButton>
+                        </div>
+                    </MudItem>
+                }
+            </div>
+        </MudItem>
+    </MudGrid>
+
+</div>

@@ -1,0 +1,80 @@
+﻿@layout MainLayoutAdmin
+@page "/amministrazione/eventi/index"
+@inherits IndexBase
+@inject IDialogService DialogService
+@using LegArtiModel
+@using MudBlazor;
+
+
+<div class="body-content-legarti">
+
+    <div class="titolo">
+        <label id="lblTitolo">Eventi</label>
+    </div>
+    <div class="box-container-mappa">
+        <MudItem xs="4" sm="12" md="12" Class="box-right-evento">
+            <button type="button" @onclick="@(() => AggiungiEvento())" class="button-aggiungi-suggerimento">Aggiungi un evento</button>
+        </MudItem>
+    </div>
+
+    <div class="box-container-mappa">
+        <MudTable @ref="table" Context="cont" ServerData="new Func<TableState, Task<TableData<EventoModel>>>(GetEventi)"
+                  Style="width:100%; overflow-y: auto"
+                  Breakpoint="Breakpoint.Sm"
+                  Striped HorizontalScrollbar Bordered
+                  LoadingProgressColor="Color.Info" FixedHeader="true">
+            <LoadingContent>
+                <Loading></Loading>
+            </LoadingContent>
+            <HeaderContent>
+                <MudTh class="table-row">
+                    Data Evento
+                </MudTh>
+                <MudTh class="table-row">
+                    Luogo Evento
+                </MudTh>
+                <MudTh class="table-row">
+                    Titolo
+                </MudTh>
+                <MudTh class="table-row">
+                    Descrizione Evento
+                </MudTh>
+                <MudTh class="table-row">
+                    Stato
+                </MudTh>
+                <MudTh class="table-row">
+                </MudTh>
+                <MudTh class="table-row">
+                </MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Data">
+                    @cont.DataGiornoEvento   @cont.OraEvento
+                </MudTd>
+                <MudTd DataLabel="Luogo">
+                    @cont.LuogoEvento
+                </MudTd>
+                <MudTd DataLabel="Titolo">
+                    @cont.TitoloEvento
+                </MudTd>
+                <MudTd DataLabel="Descrizione">
+                    @cont.DescrizioneBreveEvento
+                </MudTd>
+
+                <MudTd DataLabel="Stato">
+                    @cont.DescStato
+                </MudTd>
+                <MudTd DataLabel="Modfica" @onclick="@(() => EventoDettaglio(cont.IDEvento))">
+                    <i class="fa fa-edit"></i>
+                </MudTd>
+                <MudTd DataLabel="Modfica" @onclick="@(() =>CancellaEventoConfirm(cont.IDEvento))">
+                    <i class="fa fa-trash"></i>
+                </MudTd>
+            </RowTemplate>
+
+            <PagerContent>
+                <MudTablePager PageSizeOptions="new int[] { 10,20,40,80}"></MudTablePager>
+            </PagerContent>
+        </MudTable>
+    </div>
+</div>

@@ -1,0 +1,161 @@
+﻿@font-face {
+  font-family: "Halenoir-Light";
+  src: url(../../Files/Font/Halenoir-Light.otf) format("opentype");
+  src: local("Halenoir-Light"); }
+
+@font-face {
+  font-family: "Halenoir-Black";
+  src: url(../../Files/Font/Halenoir-Black.otf) format("opentype");
+  src: local("Halenoir-Black"); }
+
+@font-face {
+  font-family: "PlayfairDisplay-Medium";
+  src: url(../../Files/Font/PlayfairDisplay-Medium.ttf) format("truetype");
+  src: local("PlayfairDisplay-Medium"); }
+
+body {
+  color: #898b8c; }
+
+.content-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh; }
+
+.centered-div {
+  background-color: #fff;
+  color: #000;
+  width: 50%;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ffffff; }
+
+.box-login {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /*  margin: 0px;
+    border: 1px solid $color-background;
+    min-height: 50vh;
+    min-width: 40vw;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+   
+    padding:3em 15em 15em 3em;*/ }
+
+.box-login-logo {
+  padding: 10px;
+  border-bottom: 1px solid #ffffff;
+  text-align: center;
+  min-height: 3em; }
+
+.box-login-full {
+  padding: 3em 4em 3em 4em; }
+
+.box-login .form-floating > label {
+  padding: 1em 4em !important; }
+
+.box-login .box-text-left {
+  text-align: left; }
+
+.button-password-forgot {
+  padding-top: 2em;
+  /* display: flex;
+    justify-content: space-between;*/
+  font-size: 14px;
+  text-align: center; }
+
+.button-password-forgot a {
+  text-decoration: none; }
+
+.button-registrati {
+  padding-top: 2em;
+  /* display: flex;
+    justify-content: space-between;*/
+  font-size: 14px;
+  text-align: center; }
+
+.button-registrati a {
+  text-decoration: none; }
+
+.otp-hidden {
+  display: none; }
+
+#txtPassword {
+  border-right: none !important; }
+
+#spanPassword {
+  background-color: #fff; }
+
+.span-login {
+  border-right: none !important;
+  background-color: transparent;
+  border-bottom-left-radius: 10px 10px;
+  border-top-left-radius: 10px 10px; }
+
+.button-login {
+  width: 100% !important;
+  border: none;
+  padding: .5em;
+  border-radius: 12em !important;
+  background-image: linear-gradient(to right, #ffffff, #ffd75b);
+  color: #000; }
+
+.content-button-login {
+  padding-top: 1em;
+  width: 100% !important; }
+
+.text-login {
+  height: 3em !important;
+  padding: 2% !important;
+  border-left: none !important;
+  border-bottom-right-radius: 10px 10px !important;
+  border-top-right-radius: 10px 10px !important; }
+
+.form-control {
+  outline: none !important;
+  box-shadow: 0px 0px #fff; }
+
+.input-group > .form-control, .input-group > .form-select {
+  outline: none !important;
+  box-shadow: 0px 0px #fff; }
+
+.span-user {
+  padding: .9rem; }
+
+.text-login:focus {
+  border: 1px solid #ced4da !important;
+  border-left: none !important; }
+
+@media (max-width: 900px) {
+  .centered-div {
+    width: 100%;
+    margin: 5px;
+    padding: 5px; }
+  .box-login-full {
+    font-size: 8px;
+    padding: 0em; }
+  #box-login > div > div > div > label {
+    font-size: 1.5em;
+    padding: 0px !important; }
+  .box-login-full > .col-md-12 > .mud-input-control > .mud-input-control-input-container > .mud-input-label-outlined.mud-input-label-inputcontrol {
+    font-size: 1.5em;
+    padding: 0px !important; }
+  .button-registrati, .button-password-forgot {
+    font-size: 1.5em;
+    padding: .2em !important; }
+  .mud-input-label-outlined {
+    transform: translate(14px, 20px) scale(1);
+    pointer-events: none; }
+  .button-login {
+    font-size: 1.9em;
+    padding: 0 !important; }
+  .mud-icon-root {
+    width: .8em;
+    height: 1em; } }

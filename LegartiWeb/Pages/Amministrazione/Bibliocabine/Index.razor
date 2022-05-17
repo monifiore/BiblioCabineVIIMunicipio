@@ -1,0 +1,67 @@
+﻿@layout MainLayoutAdmin
+@page "/amministrazione/bibliocabine/index"
+@inherits IndexBase
+@inject IDialogService DialogService
+@using LegArtiModel
+@using MudBlazor;
+
+
+<div class="body-content-legarti">
+
+    <div class="titolo">
+        <label id="lblTitolo">Eventi</label>
+    </div>
+    <div class="box-container-mappa">
+        <MudItem xs="4" sm="12" md="12" Class="box-right-evento">
+            <button type="button" @onclick="@(() => AggiungiBibliocabina())" class="button-aggiungi-suggerimento">Aggiungi una nuova postazione</button>
+        </MudItem>
+    </div>
+
+    <div class="box-container-mappa">
+        <MudTable @ref="table" Context="cont" ServerData="new Func<TableState, Task<TableData<BiblioCabineModel>>>(GetBiblioCabine)"
+                  Style="width:100%; overflow-y: auto"
+                  Breakpoint="Breakpoint.Sm"
+                  Striped HorizontalScrollbar Bordered
+                  LoadingProgressColor="Color.Info" FixedHeader="true">
+            <LoadingContent>
+                <Loading></Loading>
+            </LoadingContent>
+            <HeaderContent>
+                <MudTh class="table-row">
+                   Nome bibliocabina
+                </MudTh>
+                <MudTh class="table-row">
+                    Posizione bibliocabina
+                </MudTh>
+                <MudTh class="table-row">
+                    Stato
+                </MudTh>
+                <MudTh class="table-row">
+                </MudTh>
+                <MudTh class="table-row">
+                </MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Data">
+                    @cont.NomeCabina
+                </MudTd>
+                <MudTd DataLabel="Luogo">
+                    @cont.Posizione
+                </MudTd>
+                <MudTd DataLabel="Stato">
+                    @cont.DescStato
+                </MudTd>
+                <MudTd DataLabel="Modfica" @onclick="@(() => CabinaDettaglio(cont.IDLocazione))">
+                    <i class="fa fa-edit"></i>
+                </MudTd>
+                <MudTd DataLabel="Modfica" @onclick="@(() =>CancellaCabinaConfirm(cont.IDLocazione))">
+                    <i class="fa fa-trash"></i>
+                </MudTd>
+            </RowTemplate>
+
+            <PagerContent>
+                <MudTablePager PageSizeOptions="new int[] { 10,20,40,80}"></MudTablePager>
+            </PagerContent>
+        </MudTable>
+    </div>
+</div>

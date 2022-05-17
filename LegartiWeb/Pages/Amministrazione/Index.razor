@@ -1,0 +1,39 @@
+﻿@layout MainLayoutAdminWithoutMenu
+@inherits IndexBase
+@using LegArtiModel
+@page "/amministrazione/index"
+
+
+<div class="titolo">
+    <label id="lblTitolo">LOGIN</label>
+</div>
+
+
+<EditForm OnValidSubmit="Login" Model="@loginModel" id="login-body">
+    <DataAnnotationsValidator />
+    <div class="box-login-admin">
+        <div class="centered-div-admin">
+
+            <div id="#box-login-admin" class="box-login-full-admin">
+                <div class="input-group form-floating mb-3  col-md-12">
+                    <MudTextField @bind-Value="@loginModel.Email" Label="Email" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Email" />
+                </div>
+                <div class="login-message-label col-md-12">
+                    <ValidationMessage For="@(() => loginModel.Email)"></ValidationMessage>
+                </div>
+                <div class="input-group form-floating mb-3 col-md-12" id="input-password">
+                    <MudTextField @bind-Value="@loginModel.Password" Label="Password" Variant="Variant.Outlined" InputType="@PasswordInput" Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="ViewHiddenPassword" />
+                </div>
+                <div class="login-message-label  col-md-12">
+                    <ValidationMessage For="@(() => loginModel.Password)"></ValidationMessage>
+                </div>
+                <div class="error-credential">
+                </div>
+                <div class="content-button-login">
+                    <button type="submit" class="button-login">Login</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</EditForm>

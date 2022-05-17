@@ -1,0 +1,246 @@
+﻿@page "/IndexMobile"
+@inherits IndexBase
+@using LegArtiModel
+
+
+<div class="main-box-home below-container hidden-big-sizes">
+    <div class="full-width-main-boxes header-container">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="inner-background-col-container extended-element">
+            <div class="inner-gradient-box">
+                <div class="center-flex-elements full-width-main-boxes">
+                    <MudItem xs="12" sm="12" Class="center-flex-elements justify-center full-width-main-boxes">
+                        <img src="/image/intestazione-home-mobile.svg" id="intestazione-icona" alt="intestazione header" />
+                    </MudItem>
+                </div>
+            </div>
+        </MudContainer>
+    </div>
+    <div class="full-width-main-boxes" id="scnd-box-mobile">
+        <MudGrid Justify="Justify.Center" Spacing="@spacingB" Class="d-flex align-center mud-width-full">
+            <MudItem xs="12" sm="12" Class="pt-5">
+                <MudGrid Justify="Justify.Center" Class="d-flex align-center mud-width-full extended-element">
+                    <MudItem xs="12" sm="12" Class="justify-center d-flex mud-width-full extended-element align-center">
+                        <MudText Typo="Typo.caption" Class="text-legarti dark-color pr-3" Align="Align.Center" Inline="false">Esplora</MudText>
+                        <img class="Xsmall-icons" src="/image/arrow-dark.svg" alt="freccia down" />
+                    </MudItem>
+                </MudGrid>
+            </MudItem>
+            <MudItem xs="12" sm="12" Class="pa-8 pt-8">
+                <MudGrid Justify="Justify.FlexStart" Spacing="@spacing" Class="d-flex align-center mud-width-full extended-element">
+                    <MudItem xs="12" sm="12" Class="pl-4">
+                        <MudText Typo="Typo.h1" Class="subtitle bold-text dark-color" Align="Align.Left">La nostra Storia</MudText>
+                    </MudItem>
+                    <MudItem xs="3" sm="3" Class=" extended-element">
+                        <MudContainer MaxWidth="MaxWidth.False" Class="pl-4 pb-5">
+                            <hr class="lines-legarti" />
+                        </MudContainer>
+                    </MudItem>
+                    <MudItem xs="10" sm="10" Class="extended-element">
+                        <MudText Typo="Typo.body1" Class="pl-4 text-legarti dark-color" Align="Align.Left">
+                            @resultStringHome
+                        </MudText>
+                    </MudItem>
+                </MudGrid>
+                <MudGrid Justify="Justify.Center" Spacing="@spacingB" Class="d-flex align-center mud-width-full extended-element">
+                    <MudItem xs="12" sm="12" Class="pt-9">
+                        <MudCarousel Class="mud-width-full d-flex justify-center" id="carousel-home-mobile" ShowArrows="@arrows" ShowBullets="false" AutoCycle="true" TData="object">
+                            <MudCarouselItem Transition="transition">
+                                <div class="d-flex justify-center carousel-home-item">
+                                    <img src="/image/libri1.jpg" alt="image gallery" />
+                                </div>
+                            </MudCarouselItem>
+                        </MudCarousel>
+                    </MudItem>
+                </MudGrid>
+            </MudItem>
+            <MudItem xs="12" sm="12" Class="pa-8 pt-4">
+                <MudGrid Justify="Justify.FlexStart" Spacing="@spacing" Class="d-flex align-center mud-width-full extended-element">
+                    <MudItem xs="12" sm="12" Class="pl-4">
+                        <MudText Typo="Typo.h1" Class="subtitle bold-text dark-color" Align="Align.Left">I nostri <br /> Obiettivi</MudText>
+                    </MudItem>
+                    <MudItem xs="3" sm="3" Class="extended-element">
+                        <MudContainer MaxWidth="MaxWidth.False" Class="pl-4 pb-5">
+                            <hr class="lines-legarti" />
+                        </MudContainer>
+                    </MudItem>
+                    <MudItem xs="12" sm="12">
+                        <MudGrid Justify="Justify.Center" Spacing="@spacingB" Class="d-flex align-center mud-width-full">
+                            <MudItem xs="12" sm="12" Class="pa-2">
+                                <MudGrid Spacing="@spacingB" Justify="Justify.Center">
+                                    <MudItem xs="12" sm="12">
+                                        <MudPaper Class="transparent-boxes d-flex align-center justify-center mud-width-full">
+                                            <img src="/image/book.svg" alt="obiettivo" class="big-icons-home" />
+                                        </MudPaper>
+                                    </MudItem>
+                                    <MudItem xs="12" sm="12">
+                                        <MudGrid Spacing="@spacingB" Justify="Justify.Center">
+                                            <MudItem xs="12" sm="12">
+                                                <MudText Align="Align.Center" Typo="Typo.body1" Class="text-bold red-color">
+                                                    @resultStringObbiettivi
+                                                </MudText>
+                                            </MudItem>
+                                        </MudGrid>
+                                    </MudItem>
+                                </MudGrid>
+                            </MudItem>
+                        </MudGrid>
+                    </MudItem>
+                </MudGrid>
+            </MudItem>
+            <MudItem xs="12" sm="12" Class="pa-8 pt-2 pb-4">
+                <MudGrid Justify="Justify.FlexStart" Spacing="@spacing" Class="d-flex align-center mud-width-full extended-element">
+                    <MudItem xs="12" sm="12" Class="pl-4">
+                        <MudText Typo="Typo.h1" Class="subtitle bold-text dark-color" Align="Align.Left">Il Mondo di<br /> Legarti</MudText>
+                    </MudItem>
+                    <MudItem xs="3" sm="3" Class="extended-element">
+                        <MudContainer MaxWidth="MaxWidth.False" Class="pl-4 pb-5">
+                            <hr class="lines-legarti" />
+                        </MudContainer>
+                    </MudItem>
+                    <MudItem xs="10" sm="10" Class="extended-element">
+                        <MudText Typo="Typo.body1" Class="pl-4 text-legarti dark-color" Align="Align.Left">
+                            @resultStringMondo
+                        </MudText>
+                    </MudItem>
+                    <MudItem xs="12" sm="12" Class="extended-element">
+                        <MudPaper Height="100%" Width="100%" Class="transparent-boxes d-flex align-center justify-start pa-1">
+                            <MudItem sm="4" md="3" lg="4">
+                                <div class="hashtag-container">
+                                    <MudText Align="Align.Center" Typo="Typo.body2" Class="red-color text-legarti-hashtag pa-1 pl-4 pr-5">#legarti</MudText>
+                                </div>
+                            </MudItem>
+                            <MudItem sm="4" md="3" lg="4">
+                                <div class="hashtag-container">
+                                    <MudText Align="Align.Center" Typo="Typo.body2" Class="red-color text-legarti-hashtag pa-1 pl-4 pr-5">#bibliocabine</MudText>
+                                </div>
+                            </MudItem>
+                            <MudItem sm="4" md="3" lg="4">
+                                <div class="hashtag-container">
+                                    <MudText Align="Align.Center" Typo="Typo.body2" Class="red-color text-legarti-hashtag pa-1 pl-4 pr-5">#settimomunicipio</MudText>
+                                </div>
+                            </MudItem>
+                        </MudPaper>
+                    </MudItem>
+                    <MudItem xs="12" sm="12" Class="extended-element">
+                        <MudPaper Width="100%" Class="transparent-boxes d-flex align-center justify-start pa-1">
+                            <MudItem sm="12" md="12" lg="12">
+                                <MudPaper Height="100%" Width="100%" Class="transparent-boxes d-flex align-center">
+                                    <MudItem sm="6" md="6" lg="6">
+                                        <div class="hashtag-container">
+                                            <MudText Align="Align.Center" Typo="Typo.body2" Class="red-color text-legarti-hashtag pa-1 pl-4 pr-5">#libri</MudText>
+                                        </div>
+                                    </MudItem>
+                                    <MudItem sm="6" md="6" lg="6">
+                                        <div class="hashtag-container">
+                                            <MudText Align="Align.Center" Typo="Typo.body2" Class="red-color text-legarti-hashtag pa-1 pl-4 pr-5">#lettura</MudText>
+                                        </div>
+                                    </MudItem>
+                                </MudPaper>
+                            </MudItem>
+                        </MudPaper>
+                    </MudItem>
+                </MudGrid>
+            </MudItem>
+            <MudItem xs="12" sm="12" Class="pt-4">
+                <MudCarousel id="med-gallery-mobile" ShowArrows="@arrows" ShowBullets="false" AutoCycle="true" TData="object">
+                    <MudCarouselItem Transition="transition" Class="d-flex justify-center align-center gallery-first-image rounded-corners-gallery-mobile">
+                        <div class="in-background-color rounded-corners-gallery-mobile">
+                            <div class="inner-gallery-gradient rounded-corners-gallery-mobile">
+                                <MudGrid Justify="Justify.Center" Spacing="@spacingB" Class="mud-width-full extended-element full-width-main-boxes pa-9">
+                                    <MudItem xs="12" sm="12">
+                                        <MudPaper Width="100%" Class="transparent-boxes d-flex align-start justify-end pr-12 pt-12">
+                                            <MudItem xs="12" sm="12">
+                                                <MudText Typo="Typo.body1" Align="Align.Right" Class="light-color text-legarti">Galleria</MudText>
+                                            </MudItem>
+                                        </MudPaper>
+                                    </MudItem>
+                                </MudGrid>
+                            </div>
+                        </div>
+                    </MudCarouselItem>
+                    <MudCarouselItem Transition="transition" Class="d-flex justify-center align-center gallery-second-image rounded-corners-gallery-mobile">
+                        <div class="in-background-color rounded-corners-gallery-mobile">
+                            <div class="inner-gallery-gradient rounded-corners-gallery-mobile">
+                                <MudGrid Justify="Justify.Center" Spacing="@spacingB" Class="mud-width-full extended-element full-width-main-boxes pa-9">
+                                    <MudItem xs="12" sm="12">
+                                        <MudPaper Width="100%" Class="transparent-boxes d-flex align-start justify-end pr-12 pt-12">
+                                            <MudItem xs="12" sm="12">
+                                                <MudText Typo="Typo.body1" Align="Align.Right" Class="light-color text-legarti">Galleria</MudText>
+                                            </MudItem>
+                                        </MudPaper>
+                                    </MudItem>
+                                </MudGrid>
+                            </div>
+                        </div>
+                    </MudCarouselItem>
+                    <MudCarouselItem Transition="transition" Class="d-flex justify-center align-center gallery-third-image rounded-corners-gallery-mobile">
+                        <div class="in-background-color rounded-corners-gallery-mobile">
+                            <div class="inner-gallery-gradient rounded-corners-gallery-mobile">
+                                <MudGrid Justify="Justify.Center" Spacing="@spacingB" Class="mud-width-full extended-element full-width-main-boxes pa-9">
+                                    <MudItem xs="12" sm="12">
+                                        <MudPaper Width="100%" Class="transparent-boxes d-flex align-start justify-end pr-12 pt-12">
+                                            <MudItem xs="12" sm="12">
+                                                <MudText Typo="Typo.body1" Align="Align.Right" Class="light-color text-legarti">Galleria</MudText>
+                                            </MudItem>
+                                        </MudPaper>
+                                    </MudItem>
+                                </MudGrid>
+                            </div>
+                        </div>
+                    </MudCarouselItem>
+                </MudCarousel>
+            </MudItem>
+            <MudItem xs="12" sm="12">
+                <footer class="negative-margin-footer">
+                    <div class="footer-legarti">
+                        <MudPaper Width="100%" Height="100%" Class="pa-1 inner-footer-container">
+                            <MudItem xs="12" sm="12" md="12" lg="12" Class=" extended-element pt-4">
+                                <MudGrid Justify="Justify.Center" Class="d-flex align-center mud-width-full extended-element">
+                                    <MudItem xs="12" sm="12" md="12" lg="12" Class="pt-4" Style="padding-bottom:0px!important">
+                                        <label>
+                                            Lascia la tua mail per agiornamenti sugli eventi di LEGARTI
+                                        </label>
+                                    </MudItem>
+                                </MudGrid>
+                                <MudGrid Justify="Justify.Center" Class="d-flex align-center mud-width-full extended-element">
+                                    <MudItem xs="10" sm="10" md="10" lg="10" Class="pt-2" Style="padding-top:0px!important">
+                                        <MudTextField @bind-Value="@mailNewsLetter" Variant="Variant.Outlined" Adornment="Adornment.End" />
+                                    </MudItem>
+                                    <MudItem xs="2" sm="2" md="2" lg="2" Class="pt-2" Style="padding-top:0px!important">
+                                          <MudButton  @onclick="@(()=>SalvaMail())"><i class="fa fa-share"></i> </MudButton>
+                                    </MudItem>
+                                </MudGrid>
+                            </MudItem>
+
+
+                            <MudItem xs="12" sm="12" md="12" lg="12" Class=" extended-element pt-4" Style="padding-top: 20px !important;">
+                                <MudGrid Justify="Justify.Center" Class="d-flex align-center mud-width-full extended-element">
+                                    <MudItem xs="12" sm="12" md="12" lg="12" Class="pt-4">
+                                        <MudPaper Class="d-flex justify-center align-center mud-width-full transparent-boxes">
+                                            <MudItem xs="1" sm="1" md="1" lg="1" Class="justify-center">
+                                                <a href="https://www.facebook.com/LegArti/" class="fa fa-facebook"></a>
+                                            </MudItem>
+                                        </MudPaper>
+                                    </MudItem>
+                                    <MudItem xs="10" sm="10" md="10" lg="10" Class="extended-element">
+                                        <MudText Align="Align.Center" Typo="Typo.h6" Class="dark-color justify-center text-reg">
+                                        Un progetto ideato da <span style="font-weight:bold">Simonetta Cervelli </span> 
+                                        con la collaborazione di <span style="font-weight:bold">Monica Fiore e Ambra Zecchin</span>
+                                        </MudText>
+                                    </MudItem>
+                                </MudGrid>
+                            </MudItem>
+                            <div>
+                                <MudItem xs="12" sm="12" md="12" lg="12" Class="pb-1 pt-4">
+                                    <MudPaper Class="d-flex justify-center align-center mud-width-full transparent-boxes">
+                                        <MudText Align="Align.Center" Typo="Typo.caption" Class="dark-color text-legarti">Legarti 2022</MudText>
+                                    </MudPaper>
+                                </MudItem>
+                            </div>
+                        </MudPaper>
+                    </div>
+                </footer>
+            </MudItem>
+        </MudGrid>
+    </div>
+</div>

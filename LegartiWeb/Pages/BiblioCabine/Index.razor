@@ -1,0 +1,44 @@
+﻿@layout MainLayout
+@page  "/bibliocabine/index"
+@inherits IndexBase
+@using LegArtiModel
+
+
+<div class="body-content-legarti">
+    <div class="titolo">
+        <label id="lblTitolo">Dove siamo</label>
+    </div>
+
+    <div class="box-container-mappa">
+        @if (listaBiblioCabine != null)
+        {
+            @if (listaBiblioCabine.Count > 0)
+            {
+                foreach (BiblioCabineModel single in listaBiblioCabine)
+                {
+                    <div class="box-mappa results-mappa">
+
+                        <a href="@single.Link">
+                            <MudCard>
+                                <MudItem xs="12" sm="12" md="12">
+                                    <MudCardMedia Image="@single.FileImg.PathImmagine" Height="200" Class="cartina" />
+                                    <MudCardContent>
+                                        <MudText Typo="Typo.h5">@single.NomeCabina</MudText>
+                                        <MudText Typo="Typo.body2">@single.Posizione</MudText>
+                                    </MudCardContent>
+                                </MudItem>
+                            </MudCard>
+                        </a>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="div-center">
+                    <MudInputLabel> Non ci sono postazioni da mostrare</MudInputLabel>
+                </div>
+            }
+        }
+    </div>
+</div>
+
