@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiModel\\LegArtiModel.csproj": {}
+    "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiModel\\LegArtiModel.csproj": {}
   },
   "projects": {
-    "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiModel\\LegArtiModel.csproj": {
+    "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiModel\\LegArtiModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiModel\\LegArtiModel.csproj",
+        "projectUniqueName": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiModel\\LegArtiModel.csproj",
         "projectName": "LegArtiModel",
-        "projectPath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiModel\\LegArtiModel.csproj",
+        "projectPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiModel\\LegArtiModel.csproj",
         "packagesPath": "C:\\Users\\Monica\\.nuget\\packages\\",
-        "outputPath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiModel\\obj\\",
+        "outputPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

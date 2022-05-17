@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiCore\\LegArtiCore.csproj": {}
+    "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiCore\\LegArtiCore.csproj": {}
   },
   "projects": {
-    "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiCommon\\LegArtiCommon.csproj": {
+    "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiCommon\\LegArtiCommon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiCommon\\LegArtiCommon.csproj",
+        "projectUniqueName": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiCommon\\LegArtiCommon.csproj",
         "projectName": "LegArtiCommon",
-        "projectPath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiCommon\\LegArtiCommon.csproj",
+        "projectPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiCommon\\LegArtiCommon.csproj",
         "packagesPath": "C:\\Users\\Monica\\.nuget\\packages\\",
-        "outputPath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiCommon\\obj\\",
+        "outputPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiCommon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiCore\\LegArtiCore.csproj": {
+    "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiCore\\LegArtiCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiCore\\LegArtiCore.csproj",
+        "projectUniqueName": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiCore\\LegArtiCore.csproj",
         "projectName": "LegArtiCore",
-        "projectPath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiCore\\LegArtiCore.csproj",
+        "projectPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiCore\\LegArtiCore.csproj",
         "packagesPath": "C:\\Users\\Monica\\.nuget\\packages\\",
-        "outputPath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiCore\\obj\\",
+        "outputPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -96,11 +96,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiDAL\\LegArtiDAL.csproj": {
-                "projectPath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiDAL\\LegArtiDAL.csproj"
+              "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiDAL\\LegArtiDAL.csproj": {
+                "projectPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiDAL\\LegArtiDAL.csproj"
               },
-              "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiModel\\LegArtiModel.csproj": {
-                "projectPath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiModel\\LegArtiModel.csproj"
+              "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiModel\\LegArtiModel.csproj": {
+                "projectPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiModel\\LegArtiModel.csproj"
               }
             }
           }
@@ -151,14 +151,14 @@
         }
       }
     },
-    "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiDAL\\LegArtiDAL.csproj": {
+    "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiDAL\\LegArtiDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiDAL\\LegArtiDAL.csproj",
+        "projectUniqueName": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiDAL\\LegArtiDAL.csproj",
         "projectName": "LegArtiDAL",
-        "projectPath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiDAL\\LegArtiDAL.csproj",
+        "projectPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiDAL\\LegArtiDAL.csproj",
         "packagesPath": "C:\\Users\\Monica\\.nuget\\packages\\",
-        "outputPath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiDAL\\obj\\",
+        "outputPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -179,8 +179,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiCommon\\LegArtiCommon.csproj": {
-                "projectPath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiCommon\\LegArtiCommon.csproj"
+              "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiCommon\\LegArtiCommon.csproj": {
+                "projectPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiCommon\\LegArtiCommon.csproj"
               }
             }
           }
@@ -219,14 +219,14 @@
         }
       }
     },
-    "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiModel\\LegArtiModel.csproj": {
+    "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiModel\\LegArtiModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiModel\\LegArtiModel.csproj",
+        "projectUniqueName": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiModel\\LegArtiModel.csproj",
         "projectName": "LegArtiModel",
-        "projectPath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiModel\\LegArtiModel.csproj",
+        "projectPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiModel\\LegArtiModel.csproj",
         "packagesPath": "C:\\Users\\Monica\\.nuget\\packages\\",
-        "outputPath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiModel\\obj\\",
+        "outputPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

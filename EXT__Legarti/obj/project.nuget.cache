@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/Wm42smez7r9J4jPUwDhI/+5rDkgznRHU8rtDb2ZofPFCuPoNovLfEo3ooaeRwNryPdqf5P4qSD4mRN/nQXx2w==",
+  "dgSpecHash": "fqM569TPnev07HLuVqVgMZmsQ5b4+zWxkcnSEl3YIJeDD56LUAIdoB5PWYEiL24NK3Q/PEoI9NnjH2nn9J3H6w==",
   "success": true,
-  "projectFilePath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\EXT__Legarti\\EXT__LegartiQCode.csproj",
+  "projectFilePath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\EXT__Legarti\\EXT__LegartiQCode.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Monica\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\Monica\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ej5fhHHGfVs+IJileUiTlf30HMmPsz1CBjXOJgfJZeGTvtmQX24QK/TkvCg8s8lTk6f1H5x5DnGYEO5SGZTXxA==",
+  "dgSpecHash": "dIqaGaWhdriBTj9kewKRkp2d3A4KBo/6vEQpbmuDKQdBEbWtdNO9+YZePUtm9cW3hCAm+dgBcTMl13DqVaeigg==",
   "success": true,
-  "projectFilePath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegartiWeb\\LegartiWeb.csproj",
+  "projectFilePath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegartiWeb\\LegartiWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Monica\\.nuget\\packages\\buildwebcompiler\\1.12.405\\buildwebcompiler.1.12.405.nupkg.sha512",
     "C:\\Users\\Monica\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.14\\microsoft.aspnetcore.authorization.5.0.14.nupkg.sha512",

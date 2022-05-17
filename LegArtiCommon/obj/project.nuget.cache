@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sFg9IU9bzfK94dvyGUgefiq7uSFyYHxim9fOMGpaH/2Kuq9KCUF8R/KfPwY82yoHqBarlIwSkOb5SKaqKW2/Jg==",
+  "dgSpecHash": "ovrnchA7/BKTEXguOY1fKC6ozzrkN4J63NlMFfvNrdmKJWXSnn6tXxof1i05EYy+/VJmS9FzfogZ2cW+WtRk1g==",
   "success": true,
-  "projectFilePath": "C:\\1_MONICA\\ProgettiMiei\\Legarti\\Legarti\\Progetto\\LegArtiCommon\\LegArtiCommon.csproj",
+  "projectFilePath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\LegArtiCommon\\LegArtiCommon.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Monica\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.14\\microsoft.aspnetcore.authorization.5.0.14.nupkg.sha512",
     "C:\\Users\\Monica\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.14\\microsoft.aspnetcore.components.5.0.14.nupkg.sha512",
