@@ -19,6 +19,7 @@ using System.Threading.Tasks;
 
 namespace LegartiWeb
 {
+
     public class Startup
     {
         private string TokenKey = "AbCdEMonicafGhLucaIlM_2N0N2M1";
