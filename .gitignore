@@ -33,15 +33,16 @@ bld/
 [Oo]ut/
 [Ll]og/
 [Ll]ogs/
-LegArtiDAL/obj/Debug/net5.0/
-LegartiWeb/bin/Debug/net5.0	
-	
+
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
-
+[Oo]bj/Debug/net5.0
+LegArtiDAL/obj/Debug/net5.0/
+LegartiWeb/bin/Debug/net5.0	
+	
 # Visual Studio 2017 auto generated files
 Generated\ Files/
 
