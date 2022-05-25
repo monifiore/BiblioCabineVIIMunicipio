@@ -16,9 +16,6 @@ namespace LegartiWeb.CustomComponent
     public class BaseCustomComponent : ComponentBase
     {
 
-      
-
-
         [Inject]
         public IDialogService DialogService { get; set; }
 
