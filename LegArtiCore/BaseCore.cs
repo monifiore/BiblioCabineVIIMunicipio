@@ -9,8 +9,6 @@ namespace LegArtiCore
 {
     public class BaseCore
     {
-
-
         protected GenericDAL genericDal = new GenericDAL();
     }
 }
