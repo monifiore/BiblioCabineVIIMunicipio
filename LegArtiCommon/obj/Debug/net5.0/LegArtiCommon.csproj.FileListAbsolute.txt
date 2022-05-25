@@ -58,3 +58,15 @@ C:\1_MONICA\ProgettiMiei\Legarti\Legarti\Progetto\LegArtiCommon\obj\Debug\net5.0
 C:\1_MONICA\ProgettiMiei\Legarti\Legarti\Progetto\LegArtiCommon\obj\Debug\net5.0\refint\LegArtiCommon.dll
 C:\1_MONICA\ProgettiMiei\Legarti\Legarti\Progetto\LegArtiCommon\obj\Debug\net5.0\LegArtiCommon.pdb
 C:\1_MONICA\ProgettiMiei\Legarti\Legarti\Progetto\LegArtiCommon\obj\Debug\net5.0\ref\LegArtiCommon.dll
+C:\1_MONICA\ProjectGitHub\BiblioCabineVIIMunicipio\LegArtiCommon\bin\Debug\net5.0\LegArtiCommon.deps.json
+C:\1_MONICA\ProjectGitHub\BiblioCabineVIIMunicipio\LegArtiCommon\bin\Debug\net5.0\LegArtiCommon.dll
+C:\1_MONICA\ProjectGitHub\BiblioCabineVIIMunicipio\LegArtiCommon\bin\Debug\net5.0\LegArtiCommon.pdb
+C:\1_MONICA\ProjectGitHub\BiblioCabineVIIMunicipio\LegArtiCommon\obj\Debug\net5.0\LegArtiCommon.csproj.AssemblyReference.cache
+C:\1_MONICA\ProjectGitHub\BiblioCabineVIIMunicipio\LegArtiCommon\obj\Debug\net5.0\LegArtiCommon.GeneratedMSBuildEditorConfig.editorconfig
+C:\1_MONICA\ProjectGitHub\BiblioCabineVIIMunicipio\LegArtiCommon\obj\Debug\net5.0\LegArtiCommon.AssemblyInfoInputs.cache
+C:\1_MONICA\ProjectGitHub\BiblioCabineVIIMunicipio\LegArtiCommon\obj\Debug\net5.0\LegArtiCommon.AssemblyInfo.cs
+C:\1_MONICA\ProjectGitHub\BiblioCabineVIIMunicipio\LegArtiCommon\obj\Debug\net5.0\LegArtiCommon.csproj.CoreCompileInputs.cache
+C:\1_MONICA\ProjectGitHub\BiblioCabineVIIMunicipio\LegArtiCommon\obj\Debug\net5.0\LegArtiCommon.dll
+C:\1_MONICA\ProjectGitHub\BiblioCabineVIIMunicipio\LegArtiCommon\obj\Debug\net5.0\refint\LegArtiCommon.dll
+C:\1_MONICA\ProjectGitHub\BiblioCabineVIIMunicipio\LegArtiCommon\obj\Debug\net5.0\LegArtiCommon.pdb
+C:\1_MONICA\ProjectGitHub\BiblioCabineVIIMunicipio\LegArtiCommon\obj\Debug\net5.0\ref\LegArtiCommon.dll
