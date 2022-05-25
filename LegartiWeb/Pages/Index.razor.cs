@@ -16,7 +16,6 @@ namespace LegartiWeb.Pages
 {
     public class IndexBase : BaseCustomComponent
     {
-
         protected List<HomeModel> listHomeDescription = new List<HomeModel>();
         HomeCore core = new HomeCore();
         protected MarkupString resultStringHome = new MarkupString();
