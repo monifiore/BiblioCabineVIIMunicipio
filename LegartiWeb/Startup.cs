@@ -21,6 +21,7 @@ namespace LegartiWeb
 {
     public class Startup
     {
+
         private string TokenKey = "AbCdEMonicafGhLucaIlM_2N0N2M1";
         private int TokenExpirationTime = 60;
         //private string ConnectionString = "Server=ITK-LP-20\\SQLEXPRESS;Database=Legarti;user=sa;password=NefertitiSql_123; persist security info=False;";
