@@ -7,6 +7,17 @@
 @import 'home.scss';
 @import 'evento.scss';
 @import 'admin.scss';
+
+
+/*============
+    N E W
+    ==========*/
+.aligning-main-container  {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
 .container-pages {
     display: flex;
     flex-flow: row wrap;
