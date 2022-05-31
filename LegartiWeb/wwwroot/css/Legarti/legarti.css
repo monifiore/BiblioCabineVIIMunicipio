@@ -960,17 +960,12 @@ body {
   align-items: center; }
 
 /* Bibliocabine page */
-.container-cards-bibliocab {
-  display: flex;
-  flex-flow: column wrap;
-  width: 100%; }
-
 .aligned-box-cabina {
   width: 33%;
   display: inline;
   float: left; }
 
-.profilo-cabina-img {
+.cabina-profile-picture {
   border-radius: 15px;
   width: 100px;
   height: 100px; }

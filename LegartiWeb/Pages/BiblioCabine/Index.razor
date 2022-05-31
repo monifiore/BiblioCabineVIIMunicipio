@@ -6,22 +6,68 @@
 
 
 <MudGrid Class="aligning-main-container pa-16">
-    <MudItem xs="12" sm="12" md="12" Class="pt-16 pl-16">
+    <MudItem xs="12" sm="12" md="12" lg="12" Class="pt-16 pl-16">
         <MudText>Bibliocabine</MudText>
         <MudText>xx risultati</MudText>
     </MudItem>
-    <MudItem xs="12" sm="12" md="12" Class="pt-16 pl-16">
+    <MudItem xs="12" sm="12" md="12" lg="12" Class="pt-16 pl-16">
         <MudGrid Justify="Justify.Center">
-            <MudItem xs="4" sm="4" md="4">
+            <MudItem xs="4" sm="4" md="4" lg="4">
                 <!-- Lista Bibliocabine -->
                 <MudGrid Justify="Justify.Center">
-                    <MudItem xs="11" sm="11" md="11" Class="pa-2">
+                    <MudItem xs="12" sm="12" md="12" lg="12" Class="pa-2">
                         <!-- Card singola Cabina -->
-                        <MudCard></MudCard>
+                        <MudCard Outlined="true">
+                            <MudCardContent>
+                                <div class="aligned-box-cabina">
+                                    <img src="~/image/cabina.jpg" alt="foto-cabina" class="cabina-profile-picture" />
+                                </div>
+                                <div class="aligned-box-cabina">
+                                    <MudGrid Justify="Justify.FlexStart">
+                                        <MudItem xs="12" sm="12" md="12" lg="12">
+                                            <MudText Typo="Typo.h3" Color="Color.Primary">Cabina xx</MudText>
+                                        </MudItem>
+                                        <MudItem xs="12" sm="12" md="12" lg="12">
+                                            <MudText Typo="Typo.body2" Color="Color.Dark">Via xx</MudText>
+                                        </MudItem>
+                                        <MudItem xs="12" sm="12" md="12" lg="12">
+                                            <MudText Typo="Typo.body2" Color="Color.Dark">Distanza</MudText>
+                                        </MudItem>
+                                    </MudGrid>
+                                </div>
+                                <div class="aligned-box-cabina">
+                                    <MudGrid Justify="Justify.FlexEnd">
+                                        <MudItem xs="12" sm="12" md="12" lg="12">
+                                            <MudButton
+                                                       Variant="Variant.Filled"
+                                                       Color="Color.Primary"
+                                                       Href="https://github.com/MudBlazor/MudBlazor"
+                                                       StartIcon="@Icons.Material.Outlined.Hearing">
+                                            </MudButton>
+                                        </MudItem>
+                                    </MudGrid>
+                                </div>
+                            </MudCardContent>
+                            <MudCardActions>
+                                <MudGrid Justify="Justify.SpaceAround">
+                                    <MudItem xs="6" sm="6" md="6" lg="6">
+                                        <MudButton Variant="Variant.Outlined" Color="Color.Primary" StartIcon="@Icons.Filled.Search">
+                                            Profilo
+                                        </MudButton>
+                                    </MudItem>
+                                    <MudItem xs="6" sm="6" md="6" lg="6">
+                                        <MudButton Variant="Variant.Outlined" Color="Color.Primary" StartIcon="@Icons.Filled.Map">
+                                            Inizia
+                                        </MudButton>
+                                    </MudItem>
+                                </MudGrid>
+                            </MudCardActions>
+                        </MudCard>
                     </MudItem>
                 </MudGrid>
             </MudItem>
-            <MudItem xs="8" sm="8" md="8">
+            <!-- Mappa -->
+            <MudItem xs="8" sm="8" md="8" lg="8">
 
             </MudItem>
         </MudGrid>
