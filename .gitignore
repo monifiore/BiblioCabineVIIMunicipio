@@ -371,3 +371,11 @@ FodyWeavers.xsd
 EXT__Legarti/obj/EXT__LegartiQCode.csproj.nuget.g.targets
 EXT__Legarti/obj/project.assets.json
 EXT__Legarti/obj/project.nuget.cache
+EXT__Legarti/obj/Debug/net5.0/EXT__LegartiQCode.assets.cache
+EXT__Legarti/obj/Debug/net5.0/EXT__LegartiQCode.assets.cache
+EXT__Legarti/obj/Debug/net5.0/EXT__LegartiQCode.GeneratedMSBuildEditorConfig.editorconfig
+EXT__Legarti/obj/EXT__LegartiQCode.csproj.nuget.dgspec.json
+*.props
+*.targets
+EXT__Legarti/obj/project.assets.json
+*.cache
