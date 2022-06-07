@@ -379,3 +379,4 @@ EXT__Legarti/obj/EXT__LegartiQCode.csproj.nuget.dgspec.json
 *.targets
 EXT__Legarti/obj/project.assets.json
 *.cache
+EXT__Legarti/obj/Debug/net5.0/EXT__LegartiQCode.GeneratedMSBuildEditorConfig.editorconfig
