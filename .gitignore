@@ -33,7 +33,7 @@ bld/
 [Oo]ut/
 [Ll]og/
 [Ll]ogs/
-
+EXT__LegartiQCode/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -368,3 +368,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+EXT__Legarti/obj/EXT__LegartiQCode.csproj.nuget.g.targets
+EXT__Legarti/obj/project.assets.json
+EXT__Legarti/obj/project.nuget.cache
