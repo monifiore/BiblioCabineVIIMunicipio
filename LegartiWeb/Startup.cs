@@ -19,9 +19,9 @@ using System.Threading.Tasks;
 
 namespace LegartiWeb
 {
+
     public class Startup
     {
-
         private string TokenKey = "AbCdEMonicafGhLucaIlM_2N0N2M1";
         private int TokenExpirationTime = 60;
         //private string ConnectionString = "Server=ITK-LP-20\\SQLEXPRESS;Database=Legarti;user=sa;password=NefertitiSql_123; persist security info=False;";
@@ -31,7 +31,7 @@ namespace LegartiWeb
             Configuration = configuration;
         }
 
-         public IConfiguration Configuration { get; private set; }
+        public IConfiguration Configuration { get; private set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
@@ -80,8 +80,5 @@ namespace LegartiWeb
                 endpoints.MapFallbackToPage("/_Host");
             });
         }
-    
-    
-    
     }
 }

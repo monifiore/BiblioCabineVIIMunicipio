@@ -19,22 +19,12 @@
             </MudItem>
             <MudItem xs="9" sm="9" md="6" lg="6" Class="transparent-boxes menu-desktop">
                 <MudPaper Class="d-flex justify-end mud-width-full transparent-boxes">
-                    <!--- ACTUAL MENU BUTTON -->
-                    @*<MudButton Color="Color.Transparent" ButtonType="ButtonType.Button">
-                        <MenuTop></MenuTop>
-                    </MudButton>*@
-
-                    <!-- NEW MENU BUTTON -->
                     <MudButton Color="Color.Transparent" ButtonType="ButtonType.Button">
-                        <MudIconButton Icon="@Icons.Material.Filled.Menu" aria-label="menu icon" Color="Color.Primary" OnClick="@ToggleDrawer">
-                        </MudIconButton>
+                        <MenuTop></MenuTop>
                     </MudButton>
                 </MudPaper>
             </MudItem>
         </MudAppBar>
-        <MudDrawer @bind-Open="@open" Elevation="2" Variant="@DrawerVariant.Responsive">
-            <MenuTop></MenuTop>
-        </MudDrawer>
 
 
 

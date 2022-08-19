@@ -2,33 +2,29 @@
   border: 1px solid #fff;
   width: 100%; }
 
-/*.box-container-mappa {
-    display: flex;
-    flex-flow: wrap;
-    width: 100%;
-}*/
-/*
+.box-container-mappa {
+  display: flex;
+  flex-flow: wrap;
+  width: 100%; }
 
 .box-mappa {
-    height: 90% !important;
-    background-color: #fff;
-    // padding: 5px;
-     flex-basis: calc((100% - 120px) / 4); 
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    transition: all .1s ease-out;
-    color: #0b2d3d;
-    box-sizing: border-box;
-    //width: 90%;
-    width: calc((100% - 120px) / 4);
-    -ms-word-break: break-all;
-    word-break: break-all;
-    border-radius: 25px
-}*/
-/*.results-mappa {
-    color: #0b2d3d;
-}*/
+  height: 90% !important;
+  background-color: #fff;
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  transition: all .1s ease-out;
+  color: #0b2d3d;
+  box-sizing: border-box;
+  width: calc((100% - 120px) / 4);
+  -ms-word-break: break-all;
+  word-break: break-all;
+  border-radius: 25px; }
+
+.results-mappa {
+  color: #0b2d3d; }
+
 .div-content-mappa {
   border-radius: 25px;
   background: #fff;
@@ -37,23 +33,20 @@
   height: 150px; }
 
 @media (max-width: 900px) {
-  /*    .box-mappa {
-        background-color: #fff;
-        margin-left: auto;
-        margin-right: auto;
-        flex-basis: calc((100% - 120px) / 1);
-        margin-bottom: 40px;
-        transition: all .1s ease-out;
-        color: #0b2d3d;
-        box-sizing: border-box;
-        width: calc((100% - 120px) / 1);
-        -ms-word-break: break-all;
-        word-break: break-all;
-        border-radius: 25px;
-    }
-*/
-  /*    .box-container-mappa {
-        display: flex;
-        flex-flow: wrap;
-        width: 100%;
-    }*/ }
+  .box-mappa {
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: calc((100% - 120px) / 1);
+    margin-bottom: 40px;
+    transition: all .1s ease-out;
+    color: #0b2d3d;
+    box-sizing: border-box;
+    width: calc((100% - 120px) / 1);
+    -ms-word-break: break-all;
+    word-break: break-all;
+    border-radius: 25px; }
+  .box-container-mappa {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%; } }

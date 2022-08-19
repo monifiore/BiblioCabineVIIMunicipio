@@ -1,29 +1,8 @@
 ﻿@inherits MenuTopBase
 
-<!--<div class="top_sub-menu">-->
+<div class="top_sub-menu">
     @*<a class=@(voceMenuSelezionata != null && voceMenuSelezionata.ToLower()=="/" ? "top_sub-menu-link active" : "top_sub-menu-link") href="/">Chi siamo </a>*@
-    <!--<a class=@(voceMenuSelezionata != null && voceMenuSelezionata.ToLower()=="bibliocabine/index" ? "top_sub-menu-link active" : "top_sub-menu-link") href="/BiblioCabine/Index">Dove Siamo</a>
+    <a class=@(voceMenuSelezionata != null && voceMenuSelezionata.ToLower()=="bibliocabine/index" ? "top_sub-menu-link active" : "top_sub-menu-link") href="/BiblioCabine/Index">Dove Siamo</a>
     <a class=@(voceMenuSelezionata != null && (voceMenuSelezionata.ToLower()=="suggerimento/index" ) ? "top_sub-menu-link active" : "top_sub-menu-link") href="/Suggerimento/Index">Idee e suggerimenti</a>
     <a class=@(voceMenuSelezionata != null && voceMenuSelezionata.ToLower()=="eventi/index" ? "top_sub-menu-link active" : "top_sub-menu-link") href="/eventi/index">Eventi</a>
-</div>-->
-
-<div id="container-menu">
-    <MudGrid Justify="Justify.FlexStart">
-        <MudItem xs="12" sm="12" md="12" lg="12">
-
-        </MudItem>
-        <MudItem xs="12" sm="12" md="12" lg="12">
-            <MudGrid Justify="Justify.FlexStart">
-                <MudItem xs="12" sm="12" md="12" lg="12">
-                    <MudText Typo="Typo.h2" Color="Color.Dark">Menu</MudText>
-                </MudItem>
-                <MudItem xs="12" sm="12" md="12" lg="12">
-                    <MudText Typo="Typo.h2" Color="Color.Dark">Menu</MudText>
-                </MudItem>
-            </MudGrid>
-        </MudItem>
-        <MudItem xs="12" sm="12" md="12" lg="12">
-
-        </MudItem>
-    </MudGrid>
 </div>

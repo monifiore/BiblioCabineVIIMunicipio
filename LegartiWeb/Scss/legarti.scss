@@ -7,44 +7,7 @@
 @import 'home.scss';
 @import 'evento.scss';
 @import 'admin.scss';
-
-
-/*============
-    N E W
-    ==========*/
-.aligning-main-container  {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-.container-pages {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.center-horizontal-items {
-    justify-content: center;
-}
-
-.center-vertical-items {
-    align-items: center;
-}
-
-/* Bibliocabine page */
-.aligned-box-cabina {
-    width: 33%;
-    display: inline;
-    float: left;
-}
-
-.cabina-profile-picture {
-    border-radius: 15px;
-    width: 100px;
-    height: 100px;
-}
-
-/* ========== END =========== */
+/**/
 body {
     margin: 0;
     width: 100%;
@@ -339,9 +302,9 @@ a {
     width: 15% !important;
 }
 
-/*.body-content-legarti {
+.body-content-legarti {
     padding-top: 5em;
-}*/
+}
 
 /* Media Queries */
 @media only screen and (max-width: 659px) {
@@ -406,7 +369,7 @@ a {
     }
 }
 
-@media (max-width: 900px) {
+@media  (max-width: 900px) {
     #yellow-box-negat-margin {
         margin-top: -19em;
         padding: 20em 0 6em 3em !important;
@@ -433,12 +396,12 @@ a {
         display: none !important;
     }
 
-    /*    .titolo {
+    .titolo {
         padding-top: 2em;
-    }*/
-    /*    .body-content-legarti {
+    }
+    .body-content-legarti {
         padding-top:1em;
-    }*/
+    }
 }
 
 
@@ -486,7 +449,7 @@ a {
 }
 
 
-/*
+
 .titolo {
     text-align: center;
     font-size: 3em;
@@ -495,7 +458,7 @@ a {
     text-shadow: 0 0 2px #ffce34;
     -moz-text-shadow: 0 0 2px #000;
     -webkit-text-shadow: 0 0 2px #000;
-}*/
+}
 #mud-snackbar-container {
     margin-bottom: 5em !important;
 }

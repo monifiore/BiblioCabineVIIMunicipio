@@ -73,7 +73,6 @@ namespace LegartiWeb.Shared
             }
             catch(Exception ex)
             {
-                        this.WriteException(ex);
                 return false;
             }
         }
@@ -135,7 +134,6 @@ namespace LegartiWeb.Shared
             }
             catch (EccezioneModel ex)
             {
-                 this.WriteException(ex);
                 utenteModel.Password = new Crypto(utenteModel.Email).Decrypt(utenteModel.Password);
                 utenteModel.Email = new Crypto().Decrypt(utenteModel.Email);
                 await MainLayout.SetVisibilitySnackBar(new MessageModel()
@@ -146,7 +144,6 @@ namespace LegartiWeb.Shared
             }
             catch (Exception ex)
             {
-                        this.WriteException(ex);
                 utenteModel.Password = new Crypto(utenteModel.Email).Decrypt(utenteModel.Password);
                 utenteModel.Email = new Crypto().Decrypt(utenteModel.Email);
                 await MainLayout.SetVisibilitySnackBar(new MessageModel()

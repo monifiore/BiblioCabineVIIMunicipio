@@ -11,12 +11,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 using System.Text.RegularExpressions;
 using System.Web;
- 
+
 namespace LegartiWeb.Pages
 {
     public class IndexBase : BaseCustomComponent
     {
-
         protected List<HomeModel> listHomeDescription = new List<HomeModel>();
         HomeCore core = new HomeCore();
         protected MarkupString resultStringHome = new MarkupString();
