@@ -66,6 +66,7 @@ namespace LegartiWeb.Pages.Amministrazione.Eventi
                     }
                     catch (Exception ex)
                     {
+                        this.WriteException(ex);
                         await AdminMainLayout.SetVisibilitySnackBar(new MessageModel()
                         {
                             Message = ex.Message,
@@ -100,6 +101,7 @@ namespace LegartiWeb.Pages.Amministrazione.Eventi
             }
             catch (Exception ex)
             {
+                        this.WriteException(ex);
                 await AdminMainLayout.SetVisibilitySnackBar(new MessageModel()
                 {
                     Message = "ATTENZIONE! L'immagine non deve superare i ",
@@ -159,6 +161,7 @@ namespace LegartiWeb.Pages.Amministrazione.Eventi
                 }
                 catch (Exception ex)
                 {
+                        this.WriteException(ex);
                     await AdminMainLayout.SetVisibilitySnackBar(new MessageModel()
                     {
                         Message = ex.Message,

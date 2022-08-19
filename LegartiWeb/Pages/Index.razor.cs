@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 using System.Text.RegularExpressions;
 using System.Web;
-
+ 
 namespace LegartiWeb.Pages
 {
     public class IndexBase : BaseCustomComponent

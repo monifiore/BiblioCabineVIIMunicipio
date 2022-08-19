@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Components;
 using System;
 using System.Text;
 using System.Threading.Tasks;
-
+ 
 namespace LegartiWeb.Pages
 {
     public class DisattivaMailNewsLetterBase : BaseCustomComponent

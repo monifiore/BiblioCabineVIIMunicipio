@@ -48,11 +48,13 @@ namespace LegartiWeb.Pages.Amministrazione.Eventi
                 }
                 catch (Exception ex)
                 {
+                    this.WriteException(ex);
                     await MainLayout.SetVisibilitySnackBar(new MessageModel()
                     {
                         Message = ex.Message,
                         Severity = SeverityEnumClass.Error
                     });
+
                 }
                 finally
                 {
@@ -121,6 +123,7 @@ namespace LegartiWeb.Pages.Amministrazione.Eventi
             }
             catch (Exception ex)
             {
+                this.WriteException(ex);
                 throw ex;
             }
             finally
@@ -178,6 +181,7 @@ namespace LegartiWeb.Pages.Amministrazione.Eventi
             }
             catch (Exception ex)
             {
+                this.WriteException(ex);
                 throw ex;
             }
         }

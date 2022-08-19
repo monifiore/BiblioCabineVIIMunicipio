@@ -1,4 +1,5 @@
 ﻿using LegArtiCommon;
+using LegArtiCore;
 using LegArtiModel;
 using LegartiWeb.Interface;
 using LegartiWeb.Shared;
@@ -16,10 +17,10 @@ namespace LegartiWeb.CustomComponent
     public class BaseCustomComponent : ComponentBase
     {
 
-      
+        ExceptionsCore exCore = new ExceptionsCore();
 
 
-        [Inject]
+          [Inject]
         public IDialogService DialogService { get; set; }
 
         [Inject]
@@ -68,6 +69,16 @@ namespace LegartiWeb.CustomComponent
                 message = ex.Message;
 
             return message;
+        }
+
+
+        protected void WriteException(Exception ex)
+        {
+            exCore.Insert(new EccezioneModel()
+            {
+                ExceptionMessage = ex.Message,
+                ExceptionDate = DateTime.Now
+            });
         }
 
         public async Task GoToBack(string path)
