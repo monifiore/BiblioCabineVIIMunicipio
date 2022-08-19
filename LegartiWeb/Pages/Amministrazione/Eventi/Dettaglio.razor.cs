@@ -193,10 +193,10 @@ namespace LegartiWeb.Pages.Amministrazione.Eventi
                     CopiaFile();
                     //Salvo nella base dati;
                     core.InsertEvento(evento);
-                    if (invioMail)
+                 /*   if (invioMail)
                     {
                         await core.InviaNewsLetter(evento);
-                    }
+                    }*/
                     AdminMainLayout.SetVisibilitySnackBar(new MessageModel()
                     {
                         Message = ConstantMessage.Successo,

@@ -60,7 +60,7 @@ namespace LegArtiCore
             }
             try
             {
-                if (model.IDUtente > 0)
+              /*  if (model.IDUtente > 0)
                 {
                     string hostSito = ConfigHelper.Settings.HostSito;
                     string component = (new Crypto().Encrypt(model.IDUtente.ToString())).Replace("/", "§").Replace("+", "€");
@@ -80,7 +80,7 @@ namespace LegArtiCore
                             smtp.Send(mail);
                         }
                     }
-                }
+                }*/
             }
             catch (ExceptionLogin ex)
             {
