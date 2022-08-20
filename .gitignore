@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+LegArtiDAL/obj
+EXT__Legarti
+.vs
+.vs
+EXT__Legarti
+LegArtiDAL
