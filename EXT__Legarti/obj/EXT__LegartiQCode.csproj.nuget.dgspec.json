@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\EXT__Legarti\\EXT__LegartiQCode.csproj": {}
+    "C:\\1_MONICA\\GitHubProject\\BiblioCabineVIIMunicipio\\EXT__Legarti\\EXT__LegartiQCode.csproj": {}
   },
   "projects": {
-    "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\EXT__Legarti\\EXT__LegartiQCode.csproj": {
+    "C:\\1_MONICA\\GitHubProject\\BiblioCabineVIIMunicipio\\EXT__Legarti\\EXT__LegartiQCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\EXT__Legarti\\EXT__LegartiQCode.csproj",
+        "projectUniqueName": "C:\\1_MONICA\\GitHubProject\\BiblioCabineVIIMunicipio\\EXT__Legarti\\EXT__LegartiQCode.csproj",
         "projectName": "EXT__LegartiQCode",
-        "projectPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\EXT__Legarti\\EXT__LegartiQCode.csproj",
+        "projectPath": "C:\\1_MONICA\\GitHubProject\\BiblioCabineVIIMunicipio\\EXT__Legarti\\EXT__LegartiQCode.csproj",
         "packagesPath": "C:\\Users\\Monica\\.nuget\\packages\\",
-        "outputPath": "C:\\1_MONICA\\ProjectGitHub\\BiblioCabineVIIMunicipio\\EXT__Legarti\\obj\\",
+        "outputPath": "C:\\1_MONICA\\GitHubProject\\BiblioCabineVIIMunicipio\\EXT__Legarti\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
