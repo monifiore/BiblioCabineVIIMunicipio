@@ -1,0 +1,55 @@
+﻿@layout MainLayout
+@page  "/video/index"
+@*@page  "/"*@
+@inherits IndexBase
+@using LegArtiModel
+@using System.Web
+@using System.Text.RegularExpressions;
+
+<div class="body-content-legarti">
+    <div class="titolo">
+        <label id="lblTitolo">Progetto Legalità</label>
+    </div>
+    <div class="body-video">
+        @{
+            <p style="white-space: pre-line">@video.Descrizione.Descrizione</p>
+        }
+    </div>
+    <div class="box-container-video">
+        @if (video != null)
+        {
+            @if (video.ListaVideo.Count > 0)
+            {
+                foreach (VideoModel single in video.ListaVideo)
+                {
+                    <div class="box-video results-mappa">
+                        <a href="@single.LinkYoutube" target="_blank">
+                            <MudCard>
+                                <MudItem xs="12" sm="12" md="12">
+                                    <MudCardContent>
+                                        <MudText Typo="Typo.body2" Class="data-style-evento">@single.Titolo  </MudText>
+                                        <MudText Typo="Typo.body2" Class="text-descrizione-evento">
+                                            @single.Descrizione
+                                    </MudText>
+
+                                    </MudCardContent>
+                                </MudItem>
+                            </MudCard>
+                           
+                         
+                        </a>
+                    </div>
+
+
+
+                }
+            }
+            else
+            {
+                <div class="div-center">
+                    <MudInputLabel> Non ci sono video da mostrare</MudInputLabel>
+                </div>
+            }
+        }
+    </div>
+</div>
