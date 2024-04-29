@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EXT__LegartiQCode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+376efa240b5bf3a10a6e21cf248741b13656bff2")]
 [assembly: System.Reflection.AssemblyProductAttribute("EXT__LegartiQCode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EXT__LegartiQCode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

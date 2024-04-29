@@ -7516,11 +7516,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\1_Monica\\Progetti\\BiblioCabineVIIMunicipio\\EXT__Legarti\\EXT__LegartiQCode.csproj",
+      "projectUniqueName": "C:\\1_Monica\\Repository\\Mio\\BiblioCabineVIIMunicipio\\EXT__Legarti\\EXT__LegartiQCode.csproj",
       "projectName": "EXT__LegartiQCode",
-      "projectPath": "C:\\1_Monica\\Progetti\\BiblioCabineVIIMunicipio\\EXT__Legarti\\EXT__LegartiQCode.csproj",
+      "projectPath": "C:\\1_Monica\\Repository\\Mio\\BiblioCabineVIIMunicipio\\EXT__Legarti\\EXT__LegartiQCode.csproj",
       "packagesPath": "C:\\Users\\mofiore\\.nuget\\packages\\",
-      "outputPath": "C:\\1_Monica\\Progetti\\BiblioCabineVIIMunicipio\\EXT__Legarti\\obj\\",
+      "outputPath": "C:\\1_Monica\\Repository\\Mio\\BiblioCabineVIIMunicipio\\EXT__Legarti\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
